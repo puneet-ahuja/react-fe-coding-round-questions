@@ -1,0 +1,41 @@
+.accordian-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    /* veritical center */
+    align-items: center;
+    /* horizontal center */
+    justify-content: center;
+}
+
+.accordian {
+    width: 500px;
+    padding: 20px;
+}
+
+.accordian-item {
+    padding: 30px;
+    background-color: brown;
+    opacity: 0.7;
+    margin-bottom: 30px;
+    /* Transition is not working as expected */
+    transition: all 5s;
+
+}
+
+.accordian-title {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.switch-button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: brown;
+    opacity: 0.7;
+}
+
