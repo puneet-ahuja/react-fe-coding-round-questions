@@ -17,7 +17,6 @@ const Accordian = () =>{
 
     const handleTitleClick = (id) => {
 
-
         if(isMultiSelectEnabled){
             const updatedSelectedItems = new Set(selectedItems);
 
@@ -41,8 +40,6 @@ const Accordian = () =>{
 
     }
 
-
-
     return <div className="accordian-wrapper">
             <button className={'switch-button'} onClick={()=>{
                 setIsMultiSelecteElabled(!isMultiSelectEnabled)
@@ -51,7 +48,6 @@ const Accordian = () =>{
             </button>
             <div className="accordian">
                 {data && data.length > 0 && data.map((dataItem) => {
-
                     return (
                         // Key should always be there as it os required by the react for its optimizations.
                         <div className='accordian-item' key={dataItem.key}>

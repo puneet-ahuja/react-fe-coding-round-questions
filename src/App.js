@@ -4,6 +4,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import TodoApp from "./components/Todo/TodoApp";
 
 // TODO : Need to understand why we are using createBrowserRouter?
 const router = createBrowserRouter([
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "accordian",
     element: <Accordian></Accordian>,
+  },
+  {
+    path: "todo",
+    element: <TodoApp></TodoApp>,
   },
 ]);
 
