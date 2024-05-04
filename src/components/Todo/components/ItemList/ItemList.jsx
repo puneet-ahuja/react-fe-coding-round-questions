@@ -4,11 +4,14 @@ const ItemList = ({
     list,
     deleteTodo,
     onCompleteHandler,
+    onUpdateHandler
 }) => {
     return <>{list && list.length > 0 &&
         list.map((item)=>{
             return <Item key={item.id} {...item} onDelete={deleteTodo}
-            onCompleteHandler={onCompleteHandler}></Item>
+            onCompleteHandler={onCompleteHandler}
+            onUpdateHandler = {onUpdateHandler}
+            ></Item>
         })
     }
     </>

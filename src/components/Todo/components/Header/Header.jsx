@@ -1,14 +1,16 @@
+import { useState } from 'react'
+import './Header.css'
+
 const Header = ({
-    addItem
+    addItem,
+    onUpdateAll
 }) => {
+
+    const [isChecked , setIsChecked ] = useState(false);
 
     const onKeyDownHandler = (event) => {
         console.log('===>Value',event.target.value)
         if(event.key === 'Enter' && event.target.value.length > 0){
-            console.log({
-                targetValue: event.target.value
-            })
-
             addItem(event.target.value)
             event.target.value = ''
         }
@@ -18,12 +20,27 @@ const Header = ({
 
 
     return <>
-    <header className='header'>Todos</header>
-    <div className='input-box'>
-        <input type="text" placeholder="Add Item here"
-            onKeyDown={onKeyDownHandler}
-         ></input>
-    </div>
+        <header className='header'>Todos</header>
+        <div className='input-box-container'>
+            <input 
+                type='checkbox' 
+                checked={isChecked} 
+                className='checkbox-markall'
+                onChange={()=>{
+
+                    const updatedCheckedValue = !isChecked;
+                    setIsChecked(updatedCheckedValue);
+                    onUpdateAll(updatedCheckedValue ? 'done': 'new')
+            
+                }
+            }></input>
+            <input type="text"
+                className='input-box'
+            
+            placeholder="Add Item here"
+                onKeyDown={onKeyDownHandler}
+            ></input>
+        </div>
     </>
 }
 

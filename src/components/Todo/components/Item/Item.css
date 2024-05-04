@@ -1,3 +1,9 @@
 .item {
     display: flex;
+    font-size: 30px;
+    justify-content: space-between;
+}
+
+.button-wrapper {
+    
 }

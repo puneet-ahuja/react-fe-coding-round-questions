@@ -22,10 +22,32 @@ const TodoApp = () => {
         })
     }
 
+    const onUpdateAll = (updatedStatus) => {
+        const updatedTodos = {
+            ...todos
+        };
+        Object.keys(updatedTodos).forEach((key) => {
+            updatedTodos[key] = {
+                ...updatedTodos[key],
+                status: updatedStatus
+            }
+        })
+
+        setTodos(updatedTodos)
+    }
+
     const deleteTodo = (id) => {
         if(todos[id]){
             const updatedTodos = {...todos};
             delete updatedTodos[id];
+            setTodos(updatedTodos);
+        }
+    }
+
+    const onUpdateHandler = (id, updatedObj) => {
+        if(todos[id]){
+            const updatedTodos = {...todos};
+            updatedTodos[id] = updatedObj;
             setTodos(updatedTodos);
         }
     }
@@ -69,15 +91,16 @@ const TodoApp = () => {
         <div className='todoapp-container'>
             <div className={'todo-app'}>
 
-                <Header addItem={addTodo}></Header>
+                <Header addItem={addTodo} onUpdateAll={onUpdateAll}></Header>
 
                 <ItemList 
                     list={list}
                     deleteTodo={deleteTodo}
                     onCompleteHandler={onCompleteHandler}
+                    onUpdateHandler={onUpdateHandler}
                 ></ItemList>
             
-                <Footer leftCount={leftCount} onClearCompleted={()=>{
+                <Footer leftCount={leftCount} selectedStatus={selectedStatus} onClearCompleted={()=>{
                     const updatedTodos = {...todos};
                     Object.keys(todos).forEach((key)=>{
                         if(todos[key].status === 'done'){
