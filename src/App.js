@@ -4,6 +4,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import RandomColorGenerator from "./components/RandomColorGenerator/RandomColorGenerator";
 
 // TODO : Need to understand why we are using createBrowserRouter?
 const router = createBrowserRouter([
@@ -17,6 +18,12 @@ const router = createBrowserRouter([
     path: "accordian",
     element: <Accordian></Accordian>,
   },
+
+  {
+    path: "random-color-generator",
+    element: <RandomColorGenerator></RandomColorGenerator>,
+  },
+  
 ]);
 
 function App() {

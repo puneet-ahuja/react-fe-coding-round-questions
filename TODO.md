@@ -1,6 +1,8 @@
 # TODO's
 - Fix Auto Imports. Why is that nor working.
 - Add auto link working for this repo.
+- Deploy repo.
+- Fix Home Page of the application.
 
 
 # Projects
