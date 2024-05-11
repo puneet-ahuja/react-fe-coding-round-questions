@@ -3,6 +3,7 @@
 - Add auto link working for this repo.
 - Deploy repo.
 - Fix Home Page of the application.
+- Verify if treeshaking is working with react-icons bundle.
 
 
 # Projects
@@ -15,8 +16,8 @@
 4. Star Rating
 5. Image Slider
 6. Load More Data - Pagination
-7. Nested Tree View / DYnamic Menu
-8. QA Code Generator
+7. Nested Tree View / Dynamic Menu
+8. QR Code Generator
 9. Light and Dark mode
 10. Scroll Indicator
 11. Custom Tabs

@@ -12,6 +12,11 @@ const Home = () => {
         <li>
           <Link to="/random-color-generator">Random COlor Generator</Link>
         </li>
+
+        {/* Link to star rating */}
+        <li>
+          <Link to="/star-rating">Star Rating</Link>
+        </li>
       </ul>
     </div>
   );
