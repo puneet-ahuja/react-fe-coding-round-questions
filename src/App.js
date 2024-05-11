@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import RandomColorGenerator from "./components/RandomColorGenerator/RandomColorGenerator";
 import StarRating from "./components/StarRating/StarRating";
+import ImageCarousel from "./components/ImageCarousel/ImageCarousel";
 
 // TODO : Need to understand why we are using createBrowserRouter?
 const router = createBrowserRouter([
@@ -27,6 +28,12 @@ const router = createBrowserRouter([
     path: "star-rating",
     element: <StarRating noOfStars={10}></StarRating>,
   },
+  {
+    path: "image-carousel",
+    element: <ImageCarousel></ImageCarousel>,
+  },
+
+  
   
 ]);
 

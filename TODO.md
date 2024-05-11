@@ -4,6 +4,7 @@
 - Deploy repo.
 - Fix Home Page of the application.
 - Verify if treeshaking is working with react-icons bundle.
+- Learn more about the BEM naming convention.
 
 
 # Projects

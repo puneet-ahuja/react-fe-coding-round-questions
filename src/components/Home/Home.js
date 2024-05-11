@@ -17,6 +17,12 @@ const Home = () => {
         <li>
           <Link to="/star-rating">Star Rating</Link>
         </li>
+
+
+        {/* Link to star rating */}
+        <li>
+          <Link to="/image-carousel">Image Carousel</Link>
+        </li>
       </ul>
     </div>
   );
