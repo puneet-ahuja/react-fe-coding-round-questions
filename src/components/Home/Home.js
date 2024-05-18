@@ -29,6 +29,16 @@ const Home = () => {
           <Link to="/load-more-products">Load More Products</Link>
         </li>
 
+        {/* Link to recursive-navigation-menu */}
+        <li>
+          <Link to="/recursive-navigation-menu">Recursive Navigation Menu</Link>
+        </li>
+
+         {/* Link to recursive-navigation-menu */}
+         <li>
+          <Link to="/tree-view">Tree View</Link>
+        </li>
+
       </ul>
     </div>
   );

@@ -1,0 +1,8 @@
+.menu-item-label {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+    align-items: center;
+}
