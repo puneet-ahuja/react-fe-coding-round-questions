@@ -7,6 +7,7 @@ import {
 import RandomColorGenerator from "./components/RandomColorGenerator/RandomColorGenerator";
 import StarRating from "./components/StarRating/StarRating";
 import ImageCarousel from "./components/ImageCarousel/ImageCarousel";
+import LoadMoreProducts from "./components/LoadMoreProducts/LoadMoreProducts";
 
 // TODO : Need to understand why we are using createBrowserRouter?
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "image-carousel",
     element: <ImageCarousel></ImageCarousel>,
+  },
+  {
+    path: "load-more-products",
+    element: <LoadMoreProducts></LoadMoreProducts>,
   },
 
   
