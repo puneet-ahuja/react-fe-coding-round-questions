@@ -39,6 +39,12 @@ const Home = () => {
           <Link to="/tree-view">Tree View</Link>
         </li>
 
+        {/* Link to qr-code-generator */}
+        <li>
+          <Link to="/qr-code-generator">QR Code Generator</Link>
+        </li>
+  
+
       </ul>
     </div>
   );
