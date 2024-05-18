@@ -8,6 +8,7 @@ import RandomColorGenerator from "./components/RandomColorGenerator/RandomColorG
 import StarRating from "./components/StarRating/StarRating";
 import ImageCarousel from "./components/ImageCarousel/ImageCarousel";
 import LoadMoreProducts from "./components/LoadMoreProducts/LoadMoreProducts";
+import RecursiveNaviationMenu from './components/RecursiveNavigationMenu/RecursiveNavigationMenu';
 
 // TODO : Need to understand why we are using createBrowserRouter?
 const router = createBrowserRouter([
@@ -37,6 +38,17 @@ const router = createBrowserRouter([
     path: "load-more-products",
     element: <LoadMoreProducts></LoadMoreProducts>,
   },
+  {
+    path: "recursive-navigation-menu",
+    element: <RecursiveNaviationMenu></RecursiveNaviationMenu>,
+  },
+  // TODO: Can we use 2 names of path in a single route?
+  {
+    path: "tree-view",
+    element: <RecursiveNaviationMenu></RecursiveNaviationMenu>,
+  },
+
+  
 
   
   
