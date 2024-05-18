@@ -1,22 +1,18 @@
 import Accordian from "./components/Accordian/Accordian";
 import Home from "./components/Home/Home";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RandomColorGenerator from "./components/RandomColorGenerator/RandomColorGenerator";
 import StarRating from "./components/StarRating/StarRating";
 import ImageCarousel from "./components/ImageCarousel/ImageCarousel";
 import LoadMoreProducts from "./components/LoadMoreProducts/LoadMoreProducts";
-import RecursiveNaviationMenu from './components/RecursiveNavigationMenu/RecursiveNavigationMenu';
+import RecursiveNaviationMenu from "./components/RecursiveNavigationMenu/RecursiveNavigationMenu";
+import QRCodeGenerator from "./components/QRCodeGenerator/QRCodeGenerator";
 
 // TODO : Need to understand why we are using createBrowserRouter?
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <Home></Home>
-    ),
+    element: <Home></Home>,
   },
   {
     path: "accordian",
@@ -47,17 +43,14 @@ const router = createBrowserRouter([
     path: "tree-view",
     element: <RecursiveNaviationMenu></RecursiveNaviationMenu>,
   },
-
-  
-
-  
-  
+  {
+    path: "qr-code-generator",
+    element: <QRCodeGenerator></QRCodeGenerator>,
+  },
 ]);
 
 function App() {
-  return (
-     <RouterProvider router={router} />
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
