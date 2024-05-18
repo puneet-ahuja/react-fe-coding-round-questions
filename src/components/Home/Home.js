@@ -23,6 +23,12 @@ const Home = () => {
         <li>
           <Link to="/image-carousel">Image Carousel</Link>
         </li>
+
+        {/* Link to load-more-products */}
+        <li>
+          <Link to="/load-more-products">Load More Products</Link>
+        </li>
+
       </ul>
     </div>
   );
