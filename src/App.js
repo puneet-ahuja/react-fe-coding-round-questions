@@ -8,6 +8,9 @@ import LoadMoreProducts from "./components/LoadMoreProducts/LoadMoreProducts";
 import RecursiveNaviationMenu from "./components/RecursiveNavigationMenu/RecursiveNavigationMenu";
 import QRCodeGenerator from "./components/QRCodeGenerator/QRCodeGenerator";
 import LightDarkSwitcher from "./components/LightDarkSwitcher/LightDarkSwitcher";
+import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator";
+
+
 
 // TODO : Need to understand why we are using createBrowserRouter?
 const router = createBrowserRouter([
@@ -51,6 +54,10 @@ const router = createBrowserRouter([
   {
     path: "light-dark-switcher",
     element: <LightDarkSwitcher></LightDarkSwitcher>,
+  },
+  {
+    path: "scroll-indicator",
+    element: <ScrollIndicator></ScrollIndicator>,
   },
 ]);
 

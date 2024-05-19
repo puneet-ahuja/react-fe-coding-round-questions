@@ -49,6 +49,11 @@ const Home = () => {
           <Link to="/light-dark-switcher">Light Dark Switcher</Link>
         </li>
 
+        {/* Link to scroll-indicator */}
+        <li>
+          <Link to="/scroll-indicator">Scroll Indicator</Link>
+        </li>
+
       </ul>
     </div>
   );
