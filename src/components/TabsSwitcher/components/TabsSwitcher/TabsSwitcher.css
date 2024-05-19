@@ -1,0 +1,31 @@
+.tabs-switcher-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    margin-top: 100px;
+}
+
+.tabs-navigation {
+    display: flex;
+    gap: 20px;
+}
+
+.tab {
+    padding: 20px 40px;
+
+    cursor: pointer;
+
+    transition: background-color 0.5s;
+}
+
+.selected-tab {
+    background-color: aqua;
+}
+
+
+.content {
+    font-size: 50px;
+    color: rgb(222, 84, 84);
+}
