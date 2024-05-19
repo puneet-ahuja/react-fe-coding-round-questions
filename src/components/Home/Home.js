@@ -54,6 +54,11 @@ const Home = () => {
           <Link to="/scroll-indicator">Scroll Indicator</Link>
         </li>
 
+        {/* Link to tabs-switcher */}
+        <li>
+          <Link to="/tabs-switcher">Tabs Switcher</Link>
+        </li>
+
       </ul>
     </div>
   );

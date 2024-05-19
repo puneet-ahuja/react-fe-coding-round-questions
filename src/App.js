@@ -9,6 +9,9 @@ import RecursiveNaviationMenu from "./components/RecursiveNavigationMenu/Recursi
 import QRCodeGenerator from "./components/QRCodeGenerator/QRCodeGenerator";
 import LightDarkSwitcher from "./components/LightDarkSwitcher/LightDarkSwitcher";
 import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator";
+import TabsSwitcherContainer from "./components/TabsSwitcher/TabsSwitcherContainer";
+
+
 
 
 
@@ -59,6 +62,13 @@ const router = createBrowserRouter([
     path: "scroll-indicator",
     element: <ScrollIndicator></ScrollIndicator>,
   },
+  {
+    path: "tabs-switcher",
+    element: <TabsSwitcherContainer></TabsSwitcherContainer>,
+  },
+
+
+  
 ]);
 
 function App() {
