@@ -7,6 +7,7 @@ import ImageCarousel from "./components/ImageCarousel/ImageCarousel";
 import LoadMoreProducts from "./components/LoadMoreProducts/LoadMoreProducts";
 import RecursiveNaviationMenu from "./components/RecursiveNavigationMenu/RecursiveNavigationMenu";
 import QRCodeGenerator from "./components/QRCodeGenerator/QRCodeGenerator";
+import LightDarkSwitcher from "./components/LightDarkSwitcher/LightDarkSwitcher";
 
 // TODO : Need to understand why we are using createBrowserRouter?
 const router = createBrowserRouter([
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
   {
     path: "qr-code-generator",
     element: <QRCodeGenerator></QRCodeGenerator>,
+  },
+  {
+    path: "light-dark-switcher",
+    element: <LightDarkSwitcher></LightDarkSwitcher>,
   },
 ]);
 

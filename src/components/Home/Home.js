@@ -43,7 +43,11 @@ const Home = () => {
         <li>
           <Link to="/qr-code-generator">QR Code Generator</Link>
         </li>
-  
+
+        {/* Link to qr-code-generator */}
+        <li>
+          <Link to="/light-dark-switcher">Light Dark Switcher</Link>
+        </li>
 
       </ul>
     </div>
