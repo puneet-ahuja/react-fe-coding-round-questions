@@ -10,9 +10,7 @@ import QRCodeGenerator from "./components/QRCodeGenerator/QRCodeGenerator";
 import LightDarkSwitcher from "./components/LightDarkSwitcher/LightDarkSwitcher";
 import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator";
 import TabsSwitcherContainer from "./components/TabsSwitcher/TabsSwitcherContainer";
-
-
-
+import CustomModal from "./components/CustomModal/CustomModal";
 
 
 // TODO : Need to understand why we are using createBrowserRouter?
@@ -66,6 +64,13 @@ const router = createBrowserRouter([
     path: "tabs-switcher",
     element: <TabsSwitcherContainer></TabsSwitcherContainer>,
   },
+  {
+    path: "custom-modal",
+    element: <CustomModal></CustomModal>,
+  },
+
+
+  
 
 
   
