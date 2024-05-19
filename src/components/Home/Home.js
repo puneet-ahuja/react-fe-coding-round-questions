@@ -59,6 +59,11 @@ const Home = () => {
           <Link to="/tabs-switcher">Tabs Switcher</Link>
         </li>
 
+         {/* Link to custom-modal */}
+         <li>
+          <Link to="/custom-modal">Custom Modal</Link>
+        </li>
+
       </ul>
     </div>
   );
