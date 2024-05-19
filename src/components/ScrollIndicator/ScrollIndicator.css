@@ -1,0 +1,36 @@
+.products-list-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px
+}
+
+.product-list-item {
+    padding: 20px;
+}
+
+
+.scroll-indicator-header {
+    position: fixed;
+    top: 0;
+    
+    width: 100%;
+
+    text-align: center;
+
+
+    background-color: #734949;
+    color: #fff;
+    
+}
+
+.scroll-indicator-container {
+    /* height: 10px; */
+    background-color: #78c253;
+}
+
+.progress-bar{
+    height: 10px;
+    width: 0%;
+    background-color: #cc61e9;
+}
