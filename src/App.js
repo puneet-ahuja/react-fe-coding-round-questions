@@ -1,6 +1,10 @@
 import Accordian from "./components/Accordian/Accordian";
 import Home from "./components/Home/Home";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import TodoApp from "./components/Todo/TodoApp";
 import RandomColorGenerator from "./components/RandomColorGenerator/RandomColorGenerator";
 import StarRating from "./components/StarRating/StarRating";
 import ImageCarousel from "./components/ImageCarousel/ImageCarousel";
@@ -12,7 +16,6 @@ import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator";
 import TabsSwitcherContainer from "./components/TabsSwitcher/TabsSwitcherContainer";
 import CustomModal from "./components/CustomModal/CustomModal";
 
-
 // TODO : Need to understand why we are using createBrowserRouter?
 const router = createBrowserRouter([
   {
@@ -22,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "accordian",
     element: <Accordian></Accordian>,
+  },
+  {
+    path: "todo",
+    element: <TodoApp></TodoApp>,
   },
   {
     path: "random-color-generator",
@@ -73,7 +80,7 @@ const router = createBrowserRouter([
   
 
 
-  
+
 ]);
 
 function App() {

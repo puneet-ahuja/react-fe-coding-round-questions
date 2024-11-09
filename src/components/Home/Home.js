@@ -8,7 +8,9 @@ const Home = () => {
         <li>
           <Link to="/accordian">Accordian</Link>
         </li>
-
+        <li>
+          <Link to="/todo">TODO Application</Link>
+        </li>
         <li>
           <Link to="/random-color-generator">Random COlor Generator</Link>
         </li>
@@ -17,7 +19,6 @@ const Home = () => {
         <li>
           <Link to="/star-rating">Star Rating</Link>
         </li>
-
 
         {/* Link to star rating */}
         <li>
@@ -34,8 +35,8 @@ const Home = () => {
           <Link to="/recursive-navigation-menu">Recursive Navigation Menu</Link>
         </li>
 
-         {/* Link to recursive-navigation-menu */}
-         <li>
+        {/* Link to recursive-navigation-menu */}
+        <li>
           <Link to="/tree-view">Tree View</Link>
         </li>
 
@@ -59,11 +60,10 @@ const Home = () => {
           <Link to="/tabs-switcher">Tabs Switcher</Link>
         </li>
 
-         {/* Link to custom-modal */}
-         <li>
+        {/* Link to custom-modal */}
+        <li>
           <Link to="/custom-modal">Custom Modal</Link>
         </li>
-
       </ul>
     </div>
   );

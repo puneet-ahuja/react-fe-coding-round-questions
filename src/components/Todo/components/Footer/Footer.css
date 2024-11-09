@@ -1,0 +1,38 @@
+.footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    font-size: 30px;
+}
+
+.switch-state {
+    display: flex;
+    gap: 10px;
+}
+
+.status-button,.complete-clear {
+    height: 40px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid transparent;
+
+}
+
+.status-button.selected {
+    border: 1px solid brown;
+}
+
+.status-button:hover {
+    border: 1px solid brown;
+}
+
+.status-button:focus {
+    box-shadow: 0 0 5px 5px brown;
+    opacity: 0.5;
+}
