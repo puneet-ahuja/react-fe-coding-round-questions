@@ -1,0 +1,2 @@
+- Have a better Animation.
+- Pre-fetch all the images.

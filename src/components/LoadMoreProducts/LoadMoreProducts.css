@@ -1,0 +1,12 @@
+.load-more-button {
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}

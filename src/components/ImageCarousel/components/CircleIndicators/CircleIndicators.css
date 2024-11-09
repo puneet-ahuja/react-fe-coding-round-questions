@@ -1,0 +1,22 @@
+.circle-indicator {
+  height: 20px;
+  width: 20px;
+
+  /* GRAY Color */
+  background-color: #75736f;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.circle-indicator.active-circle-indicator {
+  /* White Color */
+  background-color: #fff;
+}
+
+.circle-indicators-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

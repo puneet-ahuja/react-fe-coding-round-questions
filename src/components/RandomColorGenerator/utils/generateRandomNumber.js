@@ -1,0 +1,6 @@
+
+
+const generateRandomNumber = (length) => {
+    return Math.floor(Math.random() * length);
+}
+export default  generateRandomNumber;
