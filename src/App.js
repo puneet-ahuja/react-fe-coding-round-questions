@@ -1,6 +1,5 @@
 import Accordian from "./components/Accordian/Accordian";
 import Home from "./components/Home/Home";
-<<<<<<< HEAD
 import {
   createBrowserRouter,
   RouterProvider,
